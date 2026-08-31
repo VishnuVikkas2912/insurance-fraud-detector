@@ -227,7 +227,7 @@ streamlit run dashboard.py
 | XGBoost model fails to load | Make sure you're loading `xgb_model.json` with `model.load_model(...)`, not `pickle.load(...)` — see the JSON note above. |
 | Dashboard shows stale data after editing a CSV | Streamlit caches data/model loads; restart the app or clear cache from Streamlit's menu (⋮ → Clear cache). |
 
-## Notes & caveats
+## Notes
 
 - The model is saved in XGBoost's native JSON format (not pickle) to avoid
   version-mismatch errors across machines.
